@@ -15,7 +15,10 @@ export class Main {
   constructor(private http: HttpClient) {}
 
   searchPokemon() {
-    if (!this.searchTerm) return;
+    if (!this.searchTerm) {
+      console.log('Search for pokemon');
+      return;
+    }
     const url = `https://pokeapi.co/api/v2/pokemon/${this.searchTerm.toLowerCase()}`;
     this.http.get(url).subscribe(
       data => {

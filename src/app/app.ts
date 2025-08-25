@@ -4,10 +4,11 @@ import { Header } from './header/header';
 import { Main } from './main/main';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Main, HttpClientModule, FormsModule], // Add HttpClientModule here
+  imports: [RouterOutlet, Header, Main, HttpClientModule, FormsModule, Footer], // Add HttpClientModule here
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
