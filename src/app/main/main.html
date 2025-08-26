@@ -1,12 +1,18 @@
-<div class="pokemon-search d-flex justify-content-center align-items-center my-5 gap-3">
-  <img src="https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg" alt="Pokemon" style="height:40px;" />
-  <input
-    type="text"
-    class="form-control w-auto"
-    placeholder="Search Pokémon..."
-    [(ngModel)]="searchTerm"
-    (keyup.enter)="searchPokemon()" />
-  <button class="btn btn-primary" (click)="searchPokemon()">Search</button>
+<div class="pokemon-search d-flex flex-column justify-content-center align-items-center my-5 gap-3">
+  <img src="https://clipground.com/images/pokemon-logo-png-1.png" 
+       alt="Pokemon" 
+       style="height:200px;" 
+       class="mb-3" />
+
+  <div class="d-flex gap-2">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search Pokémon..."
+      [(ngModel)]="searchTerm"
+      (keyup.enter)="searchPokemon()" />
+    <button class="btn btn-primary" (click)="searchPokemon()">Search</button>
+  </div>
 </div>
 
 <p class="text-center fw-bold">Featured Pokemon</p>

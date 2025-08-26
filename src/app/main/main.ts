@@ -23,6 +23,12 @@ export class Main implements OnInit {
   ngOnInit() {
     this.getRandomNumbers(); // Trigger on page load
     this.getFeaturedPokemon();
+
+
+    document.body.className = "selector";
+
+
+
   }
 
 
@@ -45,7 +51,7 @@ export class Main implements OnInit {
     );
   }
 
-  // Function to generate and log a random number between 1 and 100
+  // Function to generate and log a random number between 1 and 1025
   getRandomNumbers() {
     this.randomNumbers = [];
     for (let i = 0; i < 5; i++) {
