@@ -38,6 +38,31 @@ button:disabled {
   cursor: auto;
 }
 
+/*cpgt*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full screen height */
+}
+
+header {
+  flex: 0 0 auto; /* fixed height */
+}
+
+main {
+  flex: 1 0 auto; /* takes up remaining space */
+}
+
+footer {
+  flex: 0 0 auto; /* fixed height */
+}
+
+
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
