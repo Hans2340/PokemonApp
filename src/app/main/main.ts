@@ -32,7 +32,7 @@ export class Main implements OnInit {
   }
 
 
-  // Function to search for a Pokémon by name or ID
+  // Function to search for a Pokémon by name or ID.
   searchPokemon() {
     if (!this.searchTerm) {
       console.log('Search for pokemon');
@@ -75,7 +75,7 @@ export class Main implements OnInit {
     forkJoin(requests).subscribe({
       next: results => {
         this.featuredPokemon = results;
-        console.log(this.featuredPokemon);
+        // console.log(this.featuredPokemon);
       },
       error: error => {
         console.error('Error fetching featured Pokémon:', error);
